@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Cause:wght@500&display=swap');
+
+/* Não precisa copiar <style,pois já está no CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cause", cursive; /* Aplica a fonte para todo o projeto */
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;    
+    background:url('/img/img.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    width: 420px;
+    background-color: transparent;
+    border: 2px solid rgba(255,255,255, .2);
+    border-radius: 10px; /*Adicionar as bordas circulares*/
+    color: white;
+    padding: 30px 40px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    backdrop-filter: blur(15px);
+}
+
+.container h1{
+    font-size: 36px;
+    text-align: center;
+}
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px dashed;
+    border-radius: 40px;
+    outline: none;
+    font-size: 16px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder{
+    color: rgba(218, 216, 216, 0.719);
+}
+
+.input-box i{
+    position: absolute;
+    right: 20px;
+    /*Para ficar centralizado*/
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    margin: -15px 0 15px;
+}
+
+/*
+Margin & Padding
+1 valor - margin: 10px; - Todos os lados
+2 valores - margin: 10px 20px; - Em cima e embaixo, dos lados
+3 valores - padding: 10px 15px 5px; - Em cima,dos lados,embaixo
+4 valores - margin: 10px 78px -9px 8px; - em cima,direita,embaixo,esquerda
+
+*/
+
+.remember-forgot label input{
+    accent-color:#fff;
+    margin-right: 2x;
+}
+
+.remember-forgot a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/*Quando passar o mouse em cima apareça o underline*/
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.login{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin-top: 10px;
+}
+
+.login:hover{
+    background: transparent;
+    border: 2px solid;
+    color: white;
+    transition: 0.5s;
+}
+
+.register-link{
+    text-align: center;
+    font-size: 14px;
+    margin: 20px 0 15px;
+}
+
+.register-link a{
+    text-decoration: none;
+    color: white;
+    font-weight: 550;
+}
+
+.register-link a:hover{
+    text-decoration: underline;
+}
